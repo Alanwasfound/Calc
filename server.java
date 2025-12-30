@@ -8,7 +8,7 @@ public class server {
     }
 
     public static void main(String[] args) {
-        AppJava aplicacao = new AppJava();
+        server aplicacao = new server();
         // Inicia o servidor Gateway na porta padrão (25333)
         GatewayServer servidor = new GatewayServer(aplicacao);
         servidor.start();
