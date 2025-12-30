@@ -8,7 +8,7 @@ import os
 if not os.path.exists("server.class"):
     print("Compilando o arquivo Java...")
     # Compila o arquivo Java e espera a conclusão
-    subprocess.run(["javac", "-cp", ".:./py4j.jar", "AppJava.java"], check=True)
+    subprocess.run(["javac", "-cp", ".:./py4j.jar", "server.java"], check=True)
 
 def start_java_server():
     subprocess.run(["java", "-cp", ".:./py4j.jar", "server"])
